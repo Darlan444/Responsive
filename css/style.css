@@ -1,0 +1,14 @@
+body{
+    margin: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+.imagens{
+    width: 40rem;
+    height: 30rem;
+    margin: 10rem;
+    border-radius: 2rem;
+}
