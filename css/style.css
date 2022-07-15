@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(../img/stars.webp);
 }
 
 .container {
@@ -37,12 +38,14 @@ body {
 
 .img {
     border-style: groove;
+    border-radius: 5%;
     margin: 3rem;
     width: 50vw;
     height: 90vh;
     padding: 2rem;
     justify-content: center;
     align-items: center;
+    background-color: #FFF;
 }
 
 #exampleFormControlTextarea1 {
@@ -60,6 +63,7 @@ body {
         border-style: solid;
         border-right: none;
         border-left: none;
+        border-radius: 0;
     }
     .imagens{
         width: 90%;
