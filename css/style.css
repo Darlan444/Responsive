@@ -5,6 +5,18 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url(../img/stars.webp);
+    background-attachment: fixed;
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-track{
+    background: rgb(101, 139, 167);
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(42, 71, 136);
+    border-radius: 5%;
 }
 
 .container {
@@ -19,110 +31,192 @@ body {
     height: 100vh;
 }
 
+/**ASIDE ESQUERDA**/
+    .left {
+        position: fixed;
+        left: 2%;
+        top: 10%;
+        width: 20vw;
+        height: 85vh;
+        background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 32px;
+    }
+
+    /**LEFT E RIGHT**/
+        .imgwebb,.imghubble{
+            width: 20rem;
+            height: 20rem;
+            margin: 0.5rem;
+            margin-top: -10%;
+        }
+        .tituloaside{
+            text-align: center;
+            color: #FFF;
+            margin: 5%;
+        }
+    /**LEFT E RIGHT**/
+    .textaside{
+        color: #FFF;
+        text-align: justify;
+        text-indent: 0.5rem;
+        margin: 8%;
+    }
+    .nota{
+        color: #FFF;
+        text-align: center;
+        margin: 8%;
+        font-size: small;
+        position: absolute;
+        bottom: 0;
+    }
+/**ASIDE ESQUERDA**/    
+
+/**ASIDE DIREITA**/   
+    .right {
+        position: fixed;
+        right: 2%;
+        top: 10%;
+        width: 20vw;
+        height: 85vh;
+        background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 32px;
+    }
+/**ASIDE DIREITA**/   
+   
+
 
 /**TÍTULO**/
-.h1 {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Mochiy Pop One', sans-serif;
-}
+    .titulo {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Mochiy Pop One', sans-serif;
+    }
+/**TÍTULO**/
 
 /**FONTES**/
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Overpass:wght@100&display=swap');
-
+    @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Overpass:wght@100&display=swap');
+/**FONTES**/
 
 
 /**Imagens**/
-.imagens {
-    width: 90%;
-    height: 50%;
-    margin: 5%;
-    margin-top: 0.2rem;
-    margin-bottom: 3rem;
-    border-radius: 2rem;
+    .imagens {
+        width: 90%;
+        height: 50%;
+        margin: 5%;
+        margin-top: 0.2rem;
+        margin-bottom: 3rem;
+        border-radius: 2rem;
 
-}
-
+    }
+/**Imagens**/
 
 /**Container das Imagens**/
-.img {
-    border-style: groove;
-    border-radius: 5%;
-    margin: 3rem;
-    width: 50vw;
-    height: 90vh;
-    padding: 1rem;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFF;
-}
+    .img {
+        border-style: groove;
+        border-radius: 5%;
+        margin: 3rem;
+        width: 50vw;
+        height: 90vh;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFF;
+    }
+/**Container das Imagens**/
 
 /**CONTEUDO - TEXTO**/
-.conteudo {
-    margin: 10%;
-    margin-top: 1%;
-    font-family: 'Overpass', sans-serif;
-    font-size: 0.9rem;
-    text-align: justify;
-    text-indent: 2rem;
-}
+    .conteudo {
+        margin: 10%;
+        margin-top: 1%;
+        font-family: 'Overpass', sans-serif;
+        font-size: 0.9rem;
+        text-align: justify;
+        text-indent: 2rem;
+    }
+/**CONTEUDO - TEXTO**/
 
 #exampleFormControlTextarea1 {
     max-height: 25vh;
 }
 
 
+
+
 /**RESPONSIVE**/
-@media (max-width:800px) {
+    @media (max-width:800px) {
 
-    body {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #FFF;
-    }
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFF;
+        }
 
-    /**IMAGENS**/
-    .img {
-        width: 100vw;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-        align-items: center;
-        border-style: solid;
-        border-right: none;
-        border-left: none;
-        border-radius: 0;
-    }
+        /**IMAGENS**/
+            .img {
+                width: 100vw;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+                justify-content: center;
+                align-items: center;
+                border-style: solid;
+                border-right: none;
+                border-left: none;
+                border-radius: 0;
+            }
+        /**IMAGENS**/
 
-    /**CONTAINER DAS IMAGENS**/
-    .imagens {
-        width: 90%;
-        height: 52%;
-        margin: 1rem;
-        margin-top: 0.1rem;
-        margin-bottom: 1rem;
-        border-radius: 1rem;
-    }
+        /**CONTAINER DAS IMAGENS**/
+            .imagens {
+                width: 90%;
+                height: 52%;
+                margin: 1rem;
+                margin-top: 0.1rem;
+                margin-bottom: 1rem;
+                border-radius: 1rem;
+            }
+        /**CONTAINER DAS IMAGENS**/
 
-    /**TITULO**/
-    .h1 {
-        margin: 1rem;
-    }
+        /**TITULO**/
+            .titulo {
+                margin: 1rem;
+            }
+        /**TITULO**/
 
-    /**CONTEUDO - TEXTO**/
-    .conteudo {
-        margin: 10%;
-        margin-top: 1%;
-        font-family: 'Overpass', sans-serif;
-        font-size: 0.7rem;
-        text-align: justify;
-        text-indent: 1rem;
+        /**CONTEUDO - TEXTO**/
+            .conteudo {
+                margin: 10%;
+                margin-top: 1%;
+                font-family: 'Overpass', sans-serif;
+                font-size: 0.7rem;
+                text-align: justify;
+                text-indent: 1rem;
+            }
+        /**CONTEUDO - TEXTO**/
+
+        /**ASIDE ESQUERDA**/
+            .left{
+                display: none;
+            }
+        /**ASIDE ESQUERDA**/
+        /**ASIDE DIREITA**/
+            .right{
+                display: none;
+            }
+        /**ASIDE DIREITA**/
     }
-}
+/**RESPONSIVE**/
