@@ -25,6 +25,7 @@ while ($data = mysqli_fetch_assoc($result)) {
         <div class="img"> 
             <h1 class="h1">'.$data['titulo'].'</h1>
             <img class="imagens" src="./img/' . $data['nome'] . '" alt="Imagem">
+            <p class="conteudo">'.$data['conteudo'].'</p>
         </div>
     ';
 }

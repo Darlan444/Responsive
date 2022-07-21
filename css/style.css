@@ -27,39 +27,68 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Mochiy Pop One', sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+/**FONTES**/
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Overpass:wght@100&display=swap');
 
 
+
+/**Imagens**/
 .imagens {
-    width: 99%;
-    height: 80%;
-    margin: 0.5%;
+    width: 90%;
+    height: 50%;
+    margin: 5%;
     margin-top: 0.2rem;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
     border-radius: 2rem;
-    
+
 }
 
+
+/**Container das Imagens**/
 .img {
     border-style: groove;
     border-radius: 5%;
     margin: 3rem;
     width: 50vw;
     height: 90vh;
-    padding: 2rem;
+    padding: 1rem;
     justify-content: center;
     align-items: center;
     background-color: #FFF;
+}
+
+/**CONTEUDO - TEXTO**/
+.conteudo {
+    margin: 10%;
+    margin-top: 1%;
+    font-family: 'Overpass', sans-serif;
+    font-size: 0.9rem;
+    text-align: justify;
+    text-indent: 2rem;
 }
 
 #exampleFormControlTextarea1 {
     max-height: 25vh;
 }
 
+
+/**RESPONSIVE**/
 @media (max-width:800px) {
-    .img{
+
+    body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFF;
+    }
+
+    /**IMAGENS**/
+    .img {
         width: 100vw;
         height: 100vh;
         margin: 0;
@@ -71,11 +100,29 @@ body {
         border-left: none;
         border-radius: 0;
     }
-    .imagens{
+
+    /**CONTAINER DAS IMAGENS**/
+    .imagens {
         width: 90%;
-        height: 70%;
+        height: 52%;
         margin: 1rem;
+        margin-top: 0.1rem;
         margin-bottom: 1rem;
         border-radius: 1rem;
+    }
+
+    /**TITULO**/
+    .h1 {
+        margin: 1rem;
+    }
+
+    /**CONTEUDO - TEXTO**/
+    .conteudo {
+        margin: 10%;
+        margin-top: 1%;
+        font-family: 'Overpass', sans-serif;
+        font-size: 0.7rem;
+        text-align: justify;
+        text-indent: 1rem;
     }
 }
