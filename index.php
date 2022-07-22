@@ -13,6 +13,14 @@
 
 <body>
 
+    <section class="navsection">
+        <nav class="navmenu">
+            <img class="logonav" src="./img/foguete-white.png" alt="LOGO">
+            <button class="menubtn">MAIS<img class="hamburguermenu" src="./img/hamb-btn.png" alt="MENU"></button>
+        </nav>
+    </section>
+
+
     <div class="left">
 
         <h1 class="tituloaside">JAMES WEBB</h1>
