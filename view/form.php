@@ -14,29 +14,13 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body class="bodyForm">
 
-    <div class="container">
-
-        <form class="col-md-6 center">
-            <div class="form-group ">
-                <label for="exampleFormControlInput1">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
-            </div>
-
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-        </form>
-
-
-
-        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
-            Tooltip on bottom
-        </button>
-
+    <div class="form">
+        <input class="inputNomeArq" type="text" name="nomeArq" id="nomeArq" required>
+        <label class="labelNomeArq" for="nomeArq">Nome do Arquivo</label>
     </div>
+
 </body>
 
 </html>

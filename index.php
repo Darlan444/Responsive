@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<body>
+<body class="bodyHome">
 
     <section class="navsection">
         <nav class="navmenu">
