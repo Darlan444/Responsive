@@ -6,17 +6,18 @@
     align-items: center;
     background-image: url(../img/stars.webp);
     background-attachment: fixed;
+    
 }
 
-::-webkit-scrollbar {
+.bodyHome::-webkit-scrollbar {
     width: 1rem;
 }
 
-::-webkit-scrollbar-track {
+.bodyHome::-webkit-scrollbar-track {
     background: rgb(101, 139, 167);
 }
 
-::-webkit-scrollbar-thumb {
+.bodyHome::-webkit-scrollbar-thumb {
     background: rgb(42, 71, 136);
     border-radius: 5%;
 }
@@ -297,10 +298,35 @@
             background: #191724;
             color: #fff;
         }
+        
+        
     /**BODY FORM**/
+    /**H1 FORM**/
+        .h1-Form{
+            font-family: 'Overpass', sans-serif;
+            font-size: 2rem;
+            color: #FFF;
+            text-align: center;
+            border-bottom: 1px solid #fff;
+            width: 15rem;
+            cursor: default;
+        }
+    /**H1 FORM**/
     /**DIV FORM**/
         .form{
             position: relative;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
+            width: 50%;
+        }
+        .form-div{
+            position: relative;
+            margin: 0;
+
         }
         /**NOME DO ARQUIVO**/
             /**INPUT NOME ARQUIVO**/
@@ -313,6 +339,7 @@
                     color: #FFF;
                     background-color: transparent;
                     outline: 2px solid #FFF;
+                    width: 25rem;
                 }
             /**INPUT NOME ARQUIVO**/
             /**LABEL NOME ARQUIVO**/
@@ -328,7 +355,7 @@
                 .inputNomeArq:focus+.labelNomeArq,
                 .inputNomeArq:valid+.labelNomeArq{
                     transform: translate(10px, -14px) scale(.8);
-                    color: #d1c5fc;
+                    color: #ddd;
                     padding-inline: 5px;
                     background-color: #242329;
                 }
@@ -337,8 +364,114 @@
                 }
             /**FOCUS INPUT NOME ARQUIVO**/  
         /**NOME DO ARQUIVO**/
+
         /**TÍTULO**/
-                        
+            /**INPUT TÍTULO**/
+                .inputTitle{
+                    padding: 1rem;
+                    border: solid #FFF;
+                    border-width: 00.1rem;
+                    border-radius: 4px;
+                    font: inherit;
+                    color: #FFF;
+                    background-color: transparent;
+                    outline: 2px solid #FFF;
+                    width: 25rem;
+                }
+            /**INPUT TÍTULO**/
+            /**LABEL TÍTULO**/
+                .labelTitle{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: translate(10px, 10px);
+                    transition: transform .25s;
+                }
+            /**LABEL TÍTULO**/
+            /**FOCUS INPUT TÍTULO**/    
+                .inputTitle:focus+.labelTitle,
+                .inputTitle:valid+.labelTitle{
+                    transform: translate(10px, -14px) scale(.8);
+                    color: #ddd;
+                    padding-inline: 5px;
+                    background-color: #242329;
+                }
+                .inputTitle:is(:focus, :valid){
+                    outline-color: #191724;
+                }
+            /**FOCUS INPUT TÍTULO**/ 
         /**TÍTULO**/
+
+        /**CONTEÚDO**/
+            /**INPUT CONTEÚDO**/
+                .inputContent{
+                    padding: 1rem;
+                    border: solid #FFF;
+                    border-width: 00.1rem;
+                    border-radius: 4px;
+                    font: inherit;
+                    color: #FFF;
+                    background-color: transparent;
+                    outline: 2px solid #FFF;
+                    width: 25rem;
+                    min-width: 25rem;
+                    max-width: 25rem;
+                    height: 5rem;
+                    min-height: 5rem;
+                    max-height: 15rem;
+                }
+                /**SCROLLBAR DENTRO DO TEXTAREA**/
+                    .inputContent::-webkit-scrollbar {
+                        width: 1rem;
+                    }
+                    
+                    .inputContent::-webkit-scrollbar-track {
+                        background: #191724;
+                    }
+                    
+                    .inputContent::-webkit-scrollbar-thumb {
+                        background: #fff;
+                        border-radius: 5%;
+                    }
+                /**SCROLLBAR DENTRO DO TEXTAREA**/
+            /**INPUT CONTEÚDO**/
+            /**LABEL CONTEÚDO**/
+                .labelContent{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: translate(10px, 10px);
+                    transition: transform .25s;
+                }
+            /**LABEL CONTEÚDO**/
+            /**FOCUS INPUT CONTEÚDO**/    
+                .inputContent:focus+.labelContent,
+                .inputContent:valid+.labelContent{
+                    transform: translate(10px, -14px) scale(.8);
+                    color: #ddd;
+                    padding-inline: 5px;
+                    background-color: #242329;
+                }
+                .inputContent:is(:focus, :valid){
+                    outline-color: #191724;
+                }
+            /**FOCUS INPUT CONTEÚDO**/ 
+        /**CONTEÚDO**/
+        /**BOTÃO PUBLICAR**/
+            .btnPublicar{
+                width: 8rem;
+                height: 2rem;
+                margin-top: 2rem;
+                background-color: #ddd;
+                color: #242329;
+                font-family: 'Mochiy Pop One', sans-serif;
+                border-radius: 1rem;
+                border: none;
+            }
+            .btnPublicar:hover{
+                background-color: #fff;
+                cursor: pointer;
+            }
+        /**BOTÃO PUBLICAR**/
     /**DIV FORM**/
 /**FORM**/

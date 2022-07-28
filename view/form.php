@@ -16,11 +16,34 @@
 
 <body class="bodyForm">
 
-    <div class="form">
-        <input class="inputNomeArq" type="text" name="nomeArq" id="nomeArq" required>
-        <label class="labelNomeArq" for="nomeArq">Nome do Arquivo</label>
-    </div>
+    <main class="form">
 
+    <h1 class="h1-Form">PUBLICAR</h1>
+
+        <div class="form-div">
+
+            <input class="inputNomeArq" type="text" name="nomeArq" id="nomeArq" required>
+            <label class="labelNomeArq" for="nomeArq">Nome do Arquivo</label>
+
+        </div>
+
+        <div class="form-div">
+
+            <input class="inputTitle" type="text" name="title" id="title" required>
+            <label class="labelTitle" for="title">Título</label>
+
+        </div>
+
+        <div class="form-div">
+
+            <textarea class="inputContent" type="text" name="content" id="content" maxlength="800"></textarea>
+            <label class="labelContent" for="content">Conteúdo</label>
+
+        </div>
+
+        <button class="btnPublicar" type="submit">PUBLICAR</button>
+
+    </main>
 </body>
 
 </html>
