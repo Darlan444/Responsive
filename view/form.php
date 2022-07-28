@@ -42,6 +42,7 @@
         </div>
 
         <button class="btnPublicar" type="submit">PUBLICAR</button>
+        <a class="redirectForm" href="../index.php">Veja os já Publicados</a>
 
     </main>
 </body>

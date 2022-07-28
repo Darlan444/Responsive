@@ -419,10 +419,11 @@
                     height: 5rem;
                     min-height: 5rem;
                     max-height: 15rem;
+                    text-indent: 1rem;
                 }
                 /**SCROLLBAR DENTRO DO TEXTAREA**/
                     .inputContent::-webkit-scrollbar {
-                        width: 1rem;
+                        width: 0.5rem;
                     }
                     
                     .inputContent::-webkit-scrollbar-track {
@@ -473,5 +474,20 @@
                 cursor: pointer;
             }
         /**BOTÃO PUBLICAR**/
+        /**REDIRECT FORM**/
+            .redirectForm{
+                margin-top: 2rem;
+                text-decoration: none;
+                color: #FFF;
+                text-decoration: underline;
+                font-family: 'Mochiy Pop One', sans-serif;
+            }
+        /**REDIRECT FORM**/
+            .redirectForm:hover{
+                text-decoration: none;
+                color: #FFF;
+                font-weight: bolder;
+            }
+        /**REDIRECT FORM**/
     /**DIV FORM**/
 /**FORM**/
