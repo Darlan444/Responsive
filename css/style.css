@@ -10,7 +10,7 @@
 }
 
 .bodyHome::-webkit-scrollbar {
-    width: 1rem;
+    width: 0.5rem;
 }
 
 .bodyHome::-webkit-scrollbar-track {

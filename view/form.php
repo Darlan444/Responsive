@@ -16,9 +16,9 @@
 
 <body class="bodyForm">
 
-    <main class="form">
+    <form class="form" method="POST" action="../model/publicar.php">
 
-    <h1 class="h1-Form">PUBLICAR</h1>
+        <h1 class="h1-Form">PUBLICAR</h1>
 
         <div class="form-div">
 
@@ -41,10 +41,10 @@
 
         </div>
 
-        <button class="btnPublicar" type="submit">PUBLICAR</button>
+        <button class="btnPublicar" type="submit" name="submit" id="submit">PUBLICAR</button>
         <a class="redirectForm" href="../index.php">Veja os já Publicados</a>
 
-    </main>
+    </form>
 </body>
 
 </html>
