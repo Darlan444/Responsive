@@ -8,5 +8,4 @@ DESKTOP
 
 MOBILE
 -
-![RESP-MOB](https://user-images.githubusercontent.com/81045126/181687755-71b08cbc-d5e1-4e36-bb12-c370ce0cdb82.PNG)
-
+![RESP-MOBHOME](https://user-images.githubusercontent.com/81045126/181688153-93112bf5-c0ef-4852-8eb4-10aa18113f13.PNG)
